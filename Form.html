@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<nav class="navbar">
+ 		 <ul>
+   		 <li><a href="index.html">Home</a></li>
+   		 <li><a href="Work.html">Work</a></li>
+  		 <li><a href="Resume.html">Resume</a></li>
+  		 <li><a href="Form.html">Contact</a></li>
+  		</ul>
+	</nav>
+
+
+	 <h1>Contact Me</h1>
+<div class="Form">
+  <form id="myForm" onsubmit="validateForm(); return false;">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required>
+    <br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" required>
+    <br>
+
+    <label for="Compnay Name">Company Name</label>
+    <input type="text" id="Company" required>
+    <br>
+
+    <label for="Message">Message</label>
+    <input type="text" id="Message" required>
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+</div>
+
+  <script>
+    function validateForm() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+
+      if (firstName === "" || lastName === "" || email === "" || phone === "") {
+        alert("Please fill in all fields.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      document.getElementById("myForm").reset();
+    }
+  </script>
+
+</body>
+</html>

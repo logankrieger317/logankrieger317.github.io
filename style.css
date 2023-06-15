@@ -1,0 +1,72 @@
+/*Nav Bar Format*/
+/*.navbar {
+/*  background-color: black;
+}*/
+
+* {
+  font-family: 'Poiret One';
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 150px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: White;
+
+}
+
+.navbar{
+  cursor: pointer;
+}
+
+.navbar:hover{
+  background-color: rgba(181, 242, 253,.3);
+  font-weight: bolder;
+  font-size: 15pt;
+}
+
+
+
+/*Layout and Style*/
+
+body{
+  background-color: #255E69;
+  background-size: cover ;
+}
+
+.homebox{
+  background-color: darkgrey;
+} 
+
+form{
+  background-color: darkgrey;
+  border: 5px solid black;
+  text-align: center;
+  padding: 25px 10px 25px 10px;
+}
+
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  border: 5px solid black;
+}
+
+p{
+  font-size: 20px;
+  color: white;
+}
+span{
+  font-size: 2rem;
+
+}
